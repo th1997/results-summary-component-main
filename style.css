@@ -38,9 +38,8 @@ main{
     background-color: white;
     box-shadow: 1px 1px 20px var(--Dark-gray-blue);
     border-radius: 25px 25px;
-    margin-left: 5%;
-    margin-right: 5%;
     font-size: 1.9vh;
+    width: 35%;
 }
 
 #left_cont{
@@ -73,9 +72,82 @@ main{
     margin: 0 auto; /* Pour centrer le cercle horizontalement */
 }
 
+#text_result{
+    padding-left: 11%;
+    padding-right: 11%;
+}
+
 #right_cont{
-    width:50%;
+    width:39%;
     height:100%;
+    padding: 1.5rem 2rem;
+}
+
+.box_summary{
+    font-weight: 700;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#Reaction_cont{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(0, 100%, 67%,0.1);
+    justify-content: space-between;
+}
+
+#Reaction_cont p{
+    color: var(--Light-red);
+}
+
+#Memory_cont{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    justify-content: space-between;
+}
+
+#Memory_cont p{
+    color: var(--Orangey-yellow);
+}
+
+#Verbal_cont{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    justify-content: space-between;
+}
+
+#Verbal_cont p{
+    color: var(--Green-teal);
+}
+
+#Visual_cont{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    justify-content: space-between;
+}
+
+#Visual_cont p{
+    color: var(--Cobalt-blue);
+}
+
+button{
+    color: white;
+    background-color: var(--Dark-gray-blue);
+    border:none;
+    width: 100%;
+    border-radius: 50px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 700;
+    margin-top: 10%;
 }
 
 footer { 
@@ -97,7 +169,6 @@ footer a { color: hsl(228, 45%, 44%) }
     }
 
     main{
-        display: flex;
         flex-direction: row;
     }
 }
