@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');  
+}
 
 :root{
     --Light-red: hsl(0, 100%, 67%);
@@ -15,13 +18,9 @@
     --Pale-blue: hsl(221, 100%, 96%);
     --Light-lavender: hsl(241, 100%, 89%);
     --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --footer-color: hsl(228, 45%, 44%);
 }
-
-.color_Dgray{ color: var(--Dark-gray-blue) }
-.color_lavender{ color: var(--Light-lavender) }
-
-.font_1-2em{ font-size: 1.2em }
-.font_1-7em{ font-size: 1.7em }
 
 * {
     margin: 0;
@@ -31,144 +30,62 @@
 body{ 
     font-family: 'Hanken Grotesk', sans-serif;
     min-height: 100vh;
+    font-size: 1.125rem;
 }
 
-main{
-    display: flex;
-    background-color: white;
-    box-shadow: 1px 1px 20px var(--Dark-gray-blue);
-    border-radius: 25px 25px;
-    font-size: 1.9vh;
-    width: 35%;
-}
-
-#left_cont{
-    width:50%;
-    height:100%;
-    float:left;
-    color: white;
+.blue_container{
     background: linear-gradient(var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
-    text-align: center;
-    border-radius: 25px 25px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom-left-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+}
+
+.Result_title{
+    font-weight: 500;
+    color: var(--Light-lavender);
+    margin-top: 1em;
+}
+
+.Total{ color: var(--Light-lavender) }
+
+.result_bg{
+    background: linear-gradient(to top, var(--Persian-blue-circle), var(--Violet-blue-circle));
+    border-radius: 50%;
+    padding: 1em 2em 1em 2em;
+    margin-top: 1em;
 }
 
 #result{
-    font-size: 7vh;
+    font-size: 4rem;
     font-weight: 800;
-    padding-top: 20%;
-}
-
-#result_bg{
-    position: relative;
-    width: 10vw;
-    height: 20vh;
-    background: linear-gradient(to top, var(--Persian-blue-circle), var(--Violet-blue-circle));
-    border-radius: 50%; /* Crée un cercle */
-    margin: 0 auto; /* Pour centrer le cercle horizontalement */
-}
-
-#text_result{
-    padding-left: 11%;
-    padding-right: 11%;
-}
-
-#right_cont{
-    width:39%;
-    height:100%;
-    padding: 1.5rem 2rem;
-}
-
-.box_summary{
-    font-weight: 700;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    border-radius: 10px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#Reaction_cont{
-    display: flex;
-    flex-direction: row;
-    background-color: hsla(0, 100%, 67%,0.1);
-    justify-content: space-between;
-}
-
-#Reaction_cont p{
-    color: var(--Light-red);
-}
-
-#Memory_cont{
-    display: flex;
-    flex-direction: row;
-    background-color: hsla(39, 100%, 56%, 0.1);
-    justify-content: space-between;
-}
-
-#Memory_cont p{
-    color: var(--Orangey-yellow);
-}
-
-#Verbal_cont{
-    display: flex;
-    flex-direction: row;
-    background-color: hsla(166, 100%, 37%, 0.1);
-    justify-content: space-between;
-}
-
-#Verbal_cont p{
-    color: var(--Green-teal);
-}
-
-#Visual_cont{
-    display: flex;
-    flex-direction: row;
-    background-color: hsla(234, 85%, 45%, 0.1);
-    justify-content: space-between;
-}
-
-#Visual_cont p{
-    color: var(--Cobalt-blue);
-}
-
-button{
     color: white;
-    background-color: var(--Dark-gray-blue);
-    border:none;
-    width: 100%;
-    border-radius: 50px;
-    padding-top: 5%;
-    padding-bottom: 5%;
+}
+
+.result_bg p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.result_description{
+    color: white;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-top: 10%;
+    margin-top: 1em;
 }
 
-footer { 
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center
+.result_message{
+    color: var(--Light-lavender);
+    font-size: 1rem;
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
+    margin-bottom: 3em;
+    text-align: center;
 }
 
-footer a { color: hsl(228, 45%, 44%) }
+@media screen and (min-width: 26.625rem) {
 
-@media screen and (min-width: 426px){
-     
-    body{ 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main{
-        flex-direction: row;
-    }
 }
